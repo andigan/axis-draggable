@@ -7,7 +7,7 @@ $('body').append("\
   </div>");
 
   $('#whirled').draggable({
-    containment: 'parent',
+//    containment: 'parent',
     scroll: false,
     start: function(event, ui) {
       // store the starting position of the element
