@@ -1,19 +1,13 @@
 $(document).ready(function() {
 
-
-////////////////////////////////
-// 6. temp for github         //
-//    drag around             //
-////////////////////////////////
-
-
+// example element
 $('body').append("\
   <div id='whirled'                                                \
        style='background-color: blue; height: 75px; width: 75px;'> \
   </div>");
 
   $('#whirled').draggable({
-//    containment: 'parent',
+    containment: 'parent',
     scroll: false,
     start: function(event, ui) {
       // store the starting position of the element
@@ -40,7 +34,7 @@ $('body').append("\
       // if the distance is greater than 5, commit to an axis
         if ( (xdistance >  5) || (ydistance >  5)
           || (xdistance < -5) || (ydistance < -5)   ) {
-          // convert to absolute numbers since some drags will result in negative distances
+          // convert to absolute because since some drags will result in negative distances
           xdistance = Math.abs(xdistance);
           ydistance = Math.abs(ydistance);
           // choose the commit axis based on the greater movement
