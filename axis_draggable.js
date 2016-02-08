@@ -34,7 +34,7 @@ $('body').append("\
       // if the distance is greater than 5, commit to an axis
         if ( (xdistance >  5) || (ydistance >  5)
           || (xdistance < -5) || (ydistance < -5)   ) {
-          // convert to absolute because since some drags will result in negative distances
+          // convert to absolute because some drags will result in negative distances
           xdistance = Math.abs(xdistance);
           ydistance = Math.abs(ydistance);
           // choose the commit axis based on the greater movement
