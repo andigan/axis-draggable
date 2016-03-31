@@ -1,4 +1,10 @@
 
-A simple jquery draggable implementation to keep the draggable element on the x or y axis.
+##### Description
 
+A simple jQuery draggable implementation to maintain the draggable element's initial horizontal or vertical axis.
 
+##### Dependencies
+
+- jQuery
+- jQuery UI
+- jQuery UI Touch Punch (optional)
