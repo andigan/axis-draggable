@@ -4,7 +4,7 @@ $(document).ready(function () {
   $('body').append("<div id='sample' style='background-color: limegreen; border: 1px solid black; height: 74px; width: 74px;'> </div>");
 
   $('#sample').draggable({
-    containment: 'window',
+    containment: 'document',
     scroll: false,
     start: function (event, ui) {
       // store the starting position of the element
