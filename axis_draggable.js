@@ -4,7 +4,7 @@ $(document).ready(function () {
   $('body').append("<div id='sample' style='background-color: limegreen; border: 1px solid black; height: 74px; width: 74px;'> </div>");
 
   $('#sample').draggable({
-    containment: 'parent',
+    containment: 'window',
     scroll: false,
     start: function (event, ui) {
       // store the starting position of the element
@@ -23,7 +23,6 @@ $(document).ready(function () {
         // first, measure the distance between the starting position and the current drag position
         this.xdistance = (this.starting_position.left - ui.position.left);
         this.ydistance = (this.starting_position.top - ui.position.top);
-
       // if the distance is greater than 4, commit to an axis
         if ( (this.xdistance >  4) || (this.ydistance >  4)
           || (this.xdistance < -4) || (this.ydistance < -4)   ) {
