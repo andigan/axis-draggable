@@ -1,7 +1,7 @@
 
 ##### Description
 
-A simple jQuery draggable implementation to maintain the draggable element's initial horizontal or vertical axis.
+A simple jQuery draggable implementation to “lock in” the initial horizontal or vertical axis of a draggable element.
 
 ##### Dependencies
 
