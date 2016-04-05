@@ -1,8 +1,11 @@
 $(document).ready(function () {
 
-  // create example element
-  $('body').append("<div id='sample' style='background-color: cornflowerblue; border: 1px solid black; height: 74px; width: 74px; top: 40%; left: 40%;'> </div>");
+  // create sample element
   $('body').css('background-color', 'black');
+  $('body').append("<div id='sample'> </div>");
+  $('#sample').css({'background-color': 'cornflowerblue', 'border': '1px solid black', 'height': '10%', 'top': '45%', 'left': '45%'});
+  $('#sample').css('width', $('#sample').height());
+
 
   $('#sample').draggable({
     containment: 'document',
