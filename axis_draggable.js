@@ -1,7 +1,8 @@
 $(document).ready(function () {
 
   // create example element
-  $('body').append("<div id='sample' style='background-color: limegreen; border: 1px solid black; height: 74px; width: 74px;'> </div>");
+  $('body').append("<div id='sample' style='background-color: cornflowerblue; border: 1px solid black; height: 74px; width: 74px; top: 40%; left: 40%;'> </div>");
+  $('body').css('background-color', 'black');
 
   $('#sample').draggable({
     containment: 'document',
@@ -32,16 +33,16 @@ $(document).ready(function () {
           // choose the commit axis based on the greater movement
           if (this.xdistance >= this.ydistance) {
             this.commit_axis = 'x';
-            this.style.backgroundColor = 'cornflowerblue';
+            this.style.backgroundColor = 'mediumorchid';
           } else {
             this.commit_axis = 'y';
-            this.style.backgroundColor = 'mediumorchid';
+            this.style.backgroundColor = 'limegreen';
           };
         };
       };
     },
     stop: function () {
-      this.style.backgroundColor = 'limegreen';
+      this.style.backgroundColor = 'cornflowerblue';
     }
   });
 });
