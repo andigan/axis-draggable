@@ -3,7 +3,7 @@ $(document).ready(function () {
   // create sample element
   $('body').css('background-color', 'black');
   $('body').append("<div id='sample'> </div>");
-  $('#sample').css({'background-color': 'cornflowerblue', 'border': '1px solid black', 'height': '20%', 'top': '40%', 'left': '40%'});
+  $('#sample').css({'background-color': 'cornflowerblue', 'border': '1px solid black', 'height': '30%', 'top': '35%', 'left': '35%'});
   $('#sample').css('width', $('#sample').height());
 
 
